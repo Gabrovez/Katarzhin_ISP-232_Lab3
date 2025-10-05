@@ -1,7 +1,7 @@
 fun main(){
-    showEnemy("Векна", 25)
-    showEnemy("Dismerat", 16)
+    spawnEnemy("Dismerat")
+    spawnEnemy("Векна", isBoss = true)
 }
-fun  showEnemy(name: String, level: Int){
-    println("Враг: $name (Уровень: $level)")
+fun  spawnEnemy(name: String, health: Int = 100, isBoss: Boolean = false){
+    println("Враг: $name Здоровье: $health HP${if (isBoss) " | БОСС!" else ""}")
 }
