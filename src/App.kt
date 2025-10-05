@@ -1,9 +1,10 @@
-fun ae(eff: (Int) -> Int){
-    val h = 100
-    println("Новое здоровье: ${eff(h)} ")
+fun oe (et: String, action: (String) -> Unit){
+    println("Cобытие: $et")
+    action(et)
 }
 fun main(){
-    ae { it + 20 }
-    ae { it - 50 }
+    oe("Rain") {
+        println("Player get status 'Wet'")
+    }
 
 }
