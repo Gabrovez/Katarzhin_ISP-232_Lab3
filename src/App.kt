@@ -1,10 +1,10 @@
-fun attack(enemy: String){
-    println("Атакован $enemy!")
+fun usePotion(name: String, power : Int){
+    println("Использовано $name (+$power HP)")
 }
-fun attack(enemyid: Int){
-    println("Атакован враг с ID $enemyid!")
+fun usePotion(power : Int, name: String ){
+    println("Использовано $name (+$power MP)")
 }
 fun main(){
-    attack("Орк")
-    attack(1001)
+    usePotion("Лечебное",50)
+    usePotion(30, "Магическое")
 }
