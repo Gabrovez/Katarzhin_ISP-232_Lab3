@@ -1,7 +1,8 @@
-fun main(){
-    showPlayerStatus("Aragorn", 100)
-    showPlayerStatus("Legolas", 85)
+fun CharacterCreation (name: String, level: Int = 1, ct: String = "Новичок"){
+    println("Игрок: $name | Уровень: $level |Класс: $ct")
 }
-fun showPlayerStatus (name: String, health: Int){
-    println("Игрок: $name | Здоровье: $health HP")
+fun main(){
+    CharacterCreation("Aragorn", 10, "Рыцарь")
+    CharacterCreation("Legolas", 5)
+    CharacterCreation("Gendalf")
 }
