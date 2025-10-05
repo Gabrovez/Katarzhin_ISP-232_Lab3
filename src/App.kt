@@ -1,7 +1,7 @@
 fun main(){
-    showChatMesage("Привет, рыцарь!")
-    showChatMesage("Враг приближается!")
+    showPlayerStatus("Aragorn", 100)
+    showPlayerStatus("Legolas", 85)
 }
-fun showChatMesage (text: String){
-    println(text)
+fun showPlayerStatus (name: String, health: Int){
+    println("Игрок: $name | Здоровье: $health HP")
 }
