@@ -1,22 +1,14 @@
-fun sum(a: Int, b: Int): Int{
-        return a + b
+fun attack(){
+    println("Атака по воздуху!")
 }
-fun sum(a: Double, b: Double): Double{
-        return a + b
+fun attack(enemy: String){
+    println("Атакован $enemy!")
 }
-fun sum(a: Int, b: Int, c: Int): Int{
-        return a + b + c
-}
-fun sum(a: Int, b: Double): Double{
-    return a + b
-}
-fun sum(a: Double, b: Int): Double{
-        return a + b
+fun attack(enemy: String, damage: Int){
+    println("Атакован $enemy c уроном $damage HP!")
 }
 fun main(){
-    val a = sum(1,  2 )
-    val b = sum(1.5, 2.5 )
-    val c = sum(1,  2 , 3 )
-    val d = sum(2, 1.5 )
-    val e = sum(1.5,  2 )
+    attack()
+    attack("Гоблин")
+    attack("Дракон", 50)
 }
