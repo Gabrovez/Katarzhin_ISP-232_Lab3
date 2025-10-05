@@ -1,9 +1,8 @@
-fun upgWeapon (weapon: MutableSet<String>){
-    weapon.add("Улучшение +1")
+fun clcDamage (baseD: Int, mult: Double): Int{
+    return (baseD * mult).toInt()
 }
 fun main(){
-    val sword = mutableSetOf("Меч")
-    upgWeapon(sword)
-    println(sword)
+    val damege = clcDamage(50, 1.5)
+    println("Нанесён урон: $damege HP")
 
 }
