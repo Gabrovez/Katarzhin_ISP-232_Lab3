@@ -1,4 +1,9 @@
-val clcdam = {base: Int, mulp: Double -> (base * mulp).toInt()}
+fun ae(eff: (Int) -> Int){
+    val h = 100
+    println("Новое здоровье: ${eff(h)} ")
+}
 fun main(){
-    println("Урон: ${clcdam(10, 1.5)}")
+    ae { it + 20 }
+    ae { it - 50 }
+
 }
