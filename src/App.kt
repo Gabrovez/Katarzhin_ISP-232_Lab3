@@ -1,7 +1,6 @@
-fun showwarning (msg: String):Unit  {
-    println("ВНИМАНИЕ: $msg")
-}
+fun isplayeralive (HP: Int): Boolean = HP > 0
 fun main(){
-    showwarning("Low HP!")
+    println(isplayeralive(10))
+    println(isplayeralive(0))
 
 }
