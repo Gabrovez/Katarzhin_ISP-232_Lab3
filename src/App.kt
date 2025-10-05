@@ -1,6 +1,4 @@
-val greet = fun(name: String){
-    println("Hello, $name!")
-}
 fun main(){
-    greet("Player")
+    val sum = fun(x: Int, y: Int):Int = x + y
+    println(sum(10,15))
 }
