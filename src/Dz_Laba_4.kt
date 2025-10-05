@@ -1,7 +1,6 @@
 fun main(){
-    createQuest("Найти кота")
-    createQuest("Спасти принцессу", 100,true)
+    print(calculateXP(5))
 }
-fun  createQuest(title: String, reward: Int = 50, isMain: Boolean = false){
-    println("Квест: $title (Награда: $reward золота${if (isMain) " | ОСНОВНОЙ" else ""})")
+fun  calculateXP(level: Int): Int{
+    return level * 1000
 }
