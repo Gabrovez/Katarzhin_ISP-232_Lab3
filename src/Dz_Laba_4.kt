@@ -1,14 +1,19 @@
 fun main(){
-    CreateWeapon("Sword")
-    CreateWeapon("GreatSword", 12)
-    CreateWeapon(25, true)
+    Heal()
+    Heal(22)
+    Heal(25, true)
 }
-fun CreateWeapon(name: String){
-    println("Оружие: $name")
+fun Heal(){
+    println("Вы исцелились на 10 HP")
 }
-fun CreateWeapon(name: String, damage: Int){
-    println("Оружие: $name (Урон: $damage)")
+fun Heal(amount: Int){
+    println("Вы исцелились на $amount HP")
 }
-fun CreateWeapon(damage: Int, magic: Boolean = false){
-    println("${if (magic) "Магическое" else "Обычное"} оружие (Урон: $damage)")
+fun Heal(amount: Int, isPotion: Boolean){
+    if (isPotion){
+        println("Выпито зелье (+$amount HP)")
+    }else{
+        println("Заклинание лечения (+$amount HP)")
+    }
+
 }
