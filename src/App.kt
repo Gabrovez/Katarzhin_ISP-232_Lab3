@@ -1,14 +1,10 @@
-fun attack(){
-    println("Атака по воздуху!")
-}
 fun attack(enemy: String){
     println("Атакован $enemy!")
 }
-fun attack(enemy: String, damage: Int){
-    println("Атакован $enemy c уроном $damage HP!")
+fun attack(enemyid: Int){
+    println("Атакован враг с ID $enemyid!")
 }
 fun main(){
-    attack()
-    attack("Гоблин")
-    attack("Дракон", 50)
+    attack("Орк")
+    attack(1001)
 }
