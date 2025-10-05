@@ -1,7 +1,7 @@
 fun main(){
-    spawnEnemy("Dismerat", 300)
-    spawnEnemy("Король Тьмы", 500, true)
+    createQuest("Найти кота")
+    createQuest("Спасти принцессу", 100,true)
 }
-fun  spawnEnemy(name: String, health: Int = 100, isBoss: Boolean = false){
-    println("Враг: $name Здоровье: $health HP${if (isBoss) " | БОСС!" else ""}")
+fun  createQuest(title: String, reward: Int = 50, isMain: Boolean = false){
+    println("Квест: $title (Награда: $reward золота${if (isMain) " | ОСНОВНОЙ" else ""})")
 }
