@@ -1,10 +1,10 @@
-fun oe (et: String, action: (String) -> Unit){
-    println("Cобытие: $et")
-    action(et)
+fun cc(): () -> Int{
+    var  count = 0
+    return {++count}
 }
 fun main(){
-    oe("Rain") {
-        println("Player get status 'Wet'")
-    }
+    val kills = cc()
+    println(kills())
+    println(kills())
 
 }
