@@ -1,8 +1,8 @@
-fun CharacterCreation (name: String, level: Int = 1, ct: String = "Новичок"){
-    println("Игрок: $name | Уровень: $level |Класс: $ct")
+fun CreateItem (name: String, price: Int, Magic: Boolean = false){
+    println("Предмет: $name | Цена: $price${if (Magic) " (магический)" else ""}")
 }
 fun main(){
-    CharacterCreation("Aragorn", 10, "Рыцарь")
-    CharacterCreation("Legolas", 5)
-    CharacterCreation("Gendalf")
+    CreateItem("Sword", 50)
+    CreateItem(price = 200, name = "Potion")
+    CreateItem("Staff", Magic = true, price = 150)
 }
