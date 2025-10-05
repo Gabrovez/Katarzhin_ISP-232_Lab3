@@ -1,6 +1,13 @@
 fun main(){
-    print(calculateXP(5))
+    println(checkInventory("Меч"))
+    println(checkInventory("Кот"))
+    println(checkInventory("Зелье"))
 }
-fun  calculateXP(level: Int): Int{
-    return level * 1000
+fun  checkInventory(item: String): Boolean{
+    val items  = arrayOf("Меч", "Кот")
+    var ans = false
+    if(item in items){
+        ans = true
+    }
+    return  ans
 }
