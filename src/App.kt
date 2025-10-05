@@ -1,6 +1,4 @@
+val clcdam = {base: Int, mulp: Double -> (base * mulp).toInt()}
 fun main(){
-    val sum = fun(x: Int, y: Int):Int {
-        return x + y
-    }
-    println(sum(10,15))
+    println("Урон: ${clcdam(10, 1.5)}")
 }
