@@ -1,7 +1,7 @@
 fun main(){
-    gp()
-    gp()
+    showChatMesage("Привет, рыцарь!")
+    showChatMesage("Враг приближается!")
 }
-fun gp(){
-    println("Добро пожаловать в игру!")
+fun showChatMesage (text: String){
+    println(text)
 }
